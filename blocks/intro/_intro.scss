@@ -1,58 +1,69 @@
 .intro {
+
+    background-color: $primary-color;
+
+    background-image: url("../../images/intro_background-circle.svg");
+    background-repeat: no-repeat;
+    background-size: 565px 565px;
+    background-position: top -160px right -160px;
+
+    &::after {
+        background-image: url("../../images/made-on-earth.svg");
+        background-repeat: no-repeat;
+        height: 169px;
+        width: 169px;
+        display: block;
+        position: absolute;
+        content: '';
+        top: 50px;
+        right: 50px;
+    }
     
     &__title{
         margin: 0;
+        text-transform: uppercase;
+        font-size: 30px;
+        line-height: 30px;
+        padding: 40px 0 0 50px;
+        color: #FFDB00;
     }
 
     &__content {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
-        margin: 40px 0 50px 0;
-        
+        margin: 0;
+        padding: 40px 0 50px 50px;
     }
 
 
 
-   &__text {
+    &__text {
        margin: 278px 0 0 100px;
        display: flex;
        flex-direction: column;
-   }
+    }
 
-   &__subtitle {
+    &__subtitle {
         margin: 0 0 171px 0;
-   }
+        font-size: 40px;
+        line-height: 48px;
+        color: #ffffff;
+        font-weight: 600;
+    }
+
+    &__button {
+       width: 163px;
+    }
 
     &__pineapple {
         margin: 0;
-        width: 129px;
-        height: 64.4px;
-        border-radius: 72.3px;
-        background-color: #CEF564;
-        border: 3px solid #016450;
-        font-family: $font-family-work-sans;
-        font-size: 12px;
-        line-height: 14px;
-        font-weight: 600;
-        color: $secondary-color;
-        text-transform: uppercase;
-        text-align: center;
         position: absolute;
-        
-
-        &:before{
-            border: 3px solid #016450;
-            width: 129px;
-            height: 64.4px;
-            background-color: #CEF564;
-            position: absolute;
-            top:-64.4px;
-            display: block;
-            content: '';
-            border-radius: 72.3px;
-            z-index: -1;
-        }
+        top: 611px;
+        left: 746px;
+        transform: rotate(10.05deg);
+      
     }
+
 
 }
