@@ -1,15 +1,54 @@
 @import '../vendor/normalize.css';
 @import '../vendor/fonts.css';
-@import '../vendor/normalize.css';
-@import '../vendor/fonts.css';
+.page {
+  font-family: "Inter", "Arial", sans-serif;
+}
+
+.button {
+  background-color: #FFDB00;
+  color: #1E3264;
+  height: 55px;
+  font-size: 18px;
+  line-height: 31px;
+  letter-spacing: 0.3px;
+  font-weight: 500;
+  box-shadow: none;
+  border: 0;
+  padding: 0;
+}
+
+.intro {
+  background-color: #9960F6;
+  background-image: url("../../images/intro_background-circle.svg");
+  background-repeat: no-repeat;
+  background-size: 565px 565px;
+  background-position: top -160px right -160px;
+}
+.intro::after {
+  background-image: url("../../images/made-on-earth.svg");
+  background-repeat: no-repeat;
+  height: 169px;
+  width: 169px;
+  display: block;
+  position: absolute;
+  content: "";
+  top: 50px;
+  right: 50px;
+}
 .intro__title {
   margin: 0;
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 30px;
+  padding: 40px 0 0 50px;
+  color: #FFDB00;
 }
 .intro__content {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  margin: 40px 0 50px 0;
+  margin: 0;
+  padding: 40px 0 50px 50px;
 }
 .intro__text {
   margin: 278px 0 0 100px;
@@ -18,32 +57,18 @@
 }
 .intro__subtitle {
   margin: 0 0 171px 0;
+  font-size: 40px;
+  line-height: 48px;
+  color: #ffffff;
+  font-weight: 600;
+}
+.intro__button {
+  width: 163px;
 }
 .intro__pineapple {
   margin: 0;
-  width: 129px;
-  height: 64.4px;
-  border-radius: 72.3px;
-  background-color: #CEF564;
-  border: 3px solid #016450;
-  font-family: "Work Sans", "Arial", sans-serif;
-  font-size: 12px;
-  line-height: 14px;
-  font-weight: 600;
-  color: #016450;
-  text-transform: uppercase;
-  text-align: center;
   position: absolute;
-}
-.intro__pineapple:before {
-  border: 3px solid #016450;
-  width: 129px;
-  height: 64.4px;
-  background-color: #CEF564;
-  position: absolute;
-  top: -64.4px;
-  display: block;
-  content: "";
-  border-radius: 72.3px;
-  z-index: -1;
+  top: 611px;
+  left: 746px;
+  transform: rotate(10.05deg);
 }/*# sourceMappingURL=index.css.map */
