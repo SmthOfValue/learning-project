@@ -1,0 +1,104 @@
+.description {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+        font-size: 60px;
+        line-height: 60px;
+        letter-spacing: 0.5px;
+        color: $button-text-color;
+        text-align: center;
+        font-weight: 500;
+        margin: 0;
+        padding: 120px 0 120px 0;
+    }
+
+    &__tastes {
+        width: 1340px;
+        min-height: 525px;
+        background-color: $primary-color;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 386px 518px;
+        grid-template-rows: 48px 93px;
+        gap: 30px 236px;
+        padding: 90px 100px 90px 100px;
+        box-sizing: border-box;
+    }
+
+    &__subtitle {
+        color: #ffffff;
+        font-size: 52px;
+        line-height: 48px;
+        font-weight: 600;
+        margin: 0;
+        grid-row: 1;
+        grid-column: 1;
+        
+    }
+
+    &__slogan {
+        color: #ffffff;
+        font-size: 18px;
+        line-height: 31px;
+        font-weight: 500;
+        letter-spacing: 0.3px;
+        opacity: 0.8;
+        margin: 0;
+        grid-row: 2;
+        grid-column: 1;
+    
+    }
+
+    &__image {
+        width: 518px;
+        height: 345px;
+    }
+
+    &__ingredients {
+        width: 1340px;
+        min-height: 580px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 386px 255px;
+        grid-template-rows: 48px 62px 55px 55px 55px;
+        gap: 30px 499px;
+        padding: 90px 100px 90px 100px;
+        box-sizing: border-box;
+
+        background: url('../../images/ingredients_circle1.svg') left 622px top 123px no-repeat, 
+        url('../../images/ingredients__circle2.svg') bottom 121px right 481px no-repeat;
+        background-color: #8556F8;
+    }
+
+    &__list {
+        grid-row: 1/4;
+        grid-column: 2;
+    }
+
+    
+    &__ingredient {
+        color: #ffffff;
+        font-size: 32px;
+        line-height: 50.4px;
+        font-weight: 700;
+        text-align: left;
+        margin: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        padding: 30px 0 4px 0;
+    }
+
+    &__ingredient:nth-of-type(1) {
+        padding-top: 0;
+    }
+
+    &__button {
+        width: 163px;
+        grid-row: 5;
+        grid-column: 1;
+    }
+
+
+}
