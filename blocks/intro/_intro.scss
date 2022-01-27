@@ -1,5 +1,5 @@
 .intro {
-
+    
     background-color: $primary-color;
     background-image: url("../../images/intro_background-circle.svg");
     background-repeat: no-repeat;
@@ -8,7 +8,7 @@
     width: 100%;
     margin: 0 auto;
     position: relative;
-
+    
     &::after {
         background-image: url("../../images/made-on-earth.svg");
         background-repeat: no-repeat;
@@ -18,7 +18,7 @@
         position: absolute;
         content: '';
         top: 50px;
-        right: 50px;
+        right: 50px;      
     }
     
     &__title{
@@ -86,13 +86,11 @@
             font-size: 30px;
             line-height: 36px;
             text-transform: uppercase;
-            text-align: center;
             color: $secondary-color;
             overflow: hidden;
-            text-overflow: clip;
             white-space: nowrap;
             width: $max-width + 93px;
-            clip: rect(0, $width + 93px, 76px, 93px);
+            clip: rect(0, $max-width + 93px, 76px, 93px);
         }
 
     }
