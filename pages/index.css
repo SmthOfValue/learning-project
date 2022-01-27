@@ -1,7 +1,10 @@
+@charset "UTF-8";
 @import '../vendor/normalize.css';
 @import '../vendor/fonts.css';
 .page {
   font-family: "Inter", "Arial", sans-serif;
+  margin: 0 auto;
+  max-width: 1440px;
 }
 
 .button {
@@ -23,6 +26,9 @@
   background-repeat: no-repeat;
   background-size: 565px 565px;
   background-position: top -160px right -160px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
 }
 .intro::after {
   background-image: url("../../images/made-on-earth.svg");
@@ -49,6 +55,10 @@
   justify-content: flex-start;
   margin: 0;
   padding: 40px 0 50px 50px;
+  position: relative;
+}
+.intro__images {
+  position: relative;
 }
 .intro__text {
   margin: 278px 0 0 100px;
@@ -68,7 +78,30 @@
 .intro__pineapple {
   margin: 0;
   position: absolute;
-  top: 611px;
-  left: 746px;
+  top: 501px;
+  left: 696px;
   transform: rotate(10.05deg);
+}
+.intro__fresh {
+  background-color: #CEF564;
+  min-height: 76px;
+  position: relative;
+}
+.intro__fresh::before {
+  content: "fresh — fresh — fresh — fresh — fresh — fresh — fresh — fresh — fresh — fresh — fresh — fresh — fresh — fresh — fresh —";
+  position: absolute;
+  top: 20px;
+  right: 0;
+  font-family: "Inter", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #016450;
+  overflow: hidden;
+  text-overflow: clip;
+  white-space: nowrap;
+  width: 1533px;
+  clip: rect(0, 1533px, 76px, 93px);
 }/*# sourceMappingURL=index.css.map */
