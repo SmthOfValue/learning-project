@@ -224,10 +224,122 @@
   -o-object-fit: cover;
      object-fit: cover;
   overflow: hidden;
+  display: block;
 }
 .soda__mango {
   position: absolute;
   transform: rotate(-19deg);
   top: 116px;
   left: -97px;
+}
+
+.samples {
+  background-color: #CEF564;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 664px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.samples__text {
+  color: #1E3264;
+  padding: 209px 0 0 150px;
+  max-width: 457px;
+}
+.samples__title {
+  margin: 0;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 65px;
+  letter-spacing: 0.3px;
+}
+.samples__subtitle {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+  letter-spacing: 0.3px;
+  margin: 0;
+  padding: 48px 0 0 0;
+}
+.samples__form-wrapper {
+  width: 693px;
+  height: 544px;
+  background-color: #016450;
+  margin: 60px 50px 60px 0;
+  color: #ffffff;
+}
+.samples__form-title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 40px;
+  margin: 0;
+  padding: 24px 0 0 30px;
+}
+.samples__form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 12px 13px;
+  margin: 50px 30px 30px 30px;
+}
+.samples__label {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 31px;
+  letter-spacing: 0.3px;
+  order: -1;
+  opacity: 0.5;
+}
+.samples__input {
+  border: 0;
+  background-color: #016450;
+  border-bottom: 2px solid #ffffff;
+  height: 44px;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+}
+.samples__input:hover {
+  cursor: pointer;
+}
+.samples__input:-moz-placeholder-shown + .samples__label {
+  opacity: 1;
+}
+.samples__input:-ms-input-placeholder + .samples__label {
+  opacity: 1;
+}
+.samples__input:placeholder-shown + .samples__label {
+  opacity: 1;
+}
+.samples__input:focus + .samples__label {
+  opacity: 0.5;
+}
+.samples__first-name {
+  grid-row: 1;
+  grid-column: 1;
+  display: flex;
+  flex-direction: column;
+}
+.samples__last-name {
+  grid-row: 1;
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+}
+.samples__email {
+  grid-row: 2;
+  grid-column: 1/3;
+  display: flex;
+  flex-direction: column;
+}
+.samples__button {
+  margin-top: 167px;
+  width: 158px;
+  background-color: #A27BFF;
+  color: #ffffff;
+}
+.samples__button:hover {
+  border-color: #E1FD2C;
 }/*# sourceMappingURL=index.css.map */
