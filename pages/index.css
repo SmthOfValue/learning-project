@@ -195,4 +195,39 @@
   width: 163px;
   grid-row: 5;
   grid-column: 1;
+}
+
+.soda {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+}
+.soda__title {
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 67px;
+  letter-spacing: 0.3px;
+  color: #1E3264;
+  max-width: 460px;
+  margin: auto 0 auto 154px;
+}
+.soda__images {
+  padding: 70px 180px 0 0;
+  position: relative;
+}
+.soda__image {
+  height: 510px;
+  width: 430px;
+  -o-object-position: top;
+     object-position: top;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+}
+.soda__mango {
+  position: absolute;
+  transform: rotate(-19deg);
+  top: 116px;
+  left: -97px;
 }/*# sourceMappingURL=index.css.map */
