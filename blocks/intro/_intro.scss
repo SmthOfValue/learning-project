@@ -1,27 +1,14 @@
 .intro {
-    
-    background-color: $primary-color;
-    background-image: url("../../images/intro_background-circle.svg");
+    background: url("../../images/made-on-earth.svg") top 50px right 50px, url("../../images/intro_background-circle.svg") top -160px right -160px, $primary-color;
     background-repeat: no-repeat;
-    background-size: 565px 565px;
-    background-position: top -160px right -160px;
+    background-size: 169px 169px, 565px 565px;
     width: 100%;
     margin: 0 auto;
     position: relative;
     
-    &::after {
-        background-image: url("../../images/made-on-earth.svg");
-        background-repeat: no-repeat;
-        height: 169px;
-        width: 169px;
-        display: block;
-        position: absolute;
-        content: '';
-        top: 50px;
-        right: 50px;      
-    }
+  
     
-    &__title{
+    &__logo{
         margin: 0;
         text-transform: uppercase;
         font-size: 30px;
