@@ -5,6 +5,8 @@
   font-family: "Inter", "Arial", sans-serif;
   margin: 0 auto;
   max-width: 1440px;
+  min-width: 320px;
+  box-sizing: border-box;
 }
 
 .button {
@@ -52,6 +54,11 @@
 .intro__images {
   position: relative;
 }
+.intro__image {
+  height: 600px;
+  width: 783px;
+  display: block;
+}
 .intro__text {
   margin: 278px 0 0 100px;
   display: flex;
@@ -96,8 +103,44 @@
   clip: rect(0, 1533px, 76px, 93px);
 }
 
+@media screen and (max-width: 1279px) {
+  .intro {
+    background: url("../../images/made-on-earth.svg") top 40px right 33px, #9960F6;
+    background-repeat: no-repeat;
+    background-size: 128px 128px;
+  }
+  .intro__content {
+    padding: 126px 50px 50px 50px;
+    flex-direction: column;
+    width: 668px;
+    margin: auto;
+  }
+  .intro__text {
+    margin: 50px 0 0 0;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .intro__subtitle {
+    margin: 0;
+    font-size: 30px;
+    line-height: 38px;
+    max-width: 407px;
+  }
+  .intro__images {
+    width: 668px;
+    margin: 0 auto;
+  }
+  .intro__image {
+    height: 514px;
+    width: 668px;
+  }
+  .intro__pineapple {
+    top: 358px;
+    left: 507px;
+  }
+}
 .description {
-  width: 100%;
+  max-width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -113,14 +156,14 @@
   padding: 120px 0 120px 0;
 }
 .description__tastes {
-  width: 1340px;
+  max-width: 1340px;
   min-height: 525px;
   background-color: #9960F6;
-  margin: 0 auto;
+  margin: 0 50px;
   display: grid;
-  grid-template-columns: 386px 518px;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 48px 93px;
-  gap: 30px 236px;
+  gap: 30px 16.4%;
   padding: 90px 100px 90px 100px;
   box-sizing: border-box;
 }
@@ -149,16 +192,16 @@
   height: 345px;
 }
 .description__ingredients {
-  width: 1340px;
+  max-width: 1340px;
   min-height: 580px;
-  margin: 0 auto;
+  margin: 0 50px;
   display: grid;
-  grid-template-columns: 386px 255px;
+  grid-template-columns: minmax(370px, 1fr) 255px;
   grid-template-rows: 48px 62px 55px 55px 55px;
-  gap: 30px 499px;
+  gap: 30px 37%;
   padding: 90px 100px 90px 100px;
   box-sizing: border-box;
-  background: url("../../images/ingredients_circle1.svg") left 622px top 123px no-repeat, url("../../images/ingredients__circle2.svg") bottom 121px right 481px no-repeat;
+  background: url("../../images/ingredients_circle1.svg") left 46.41% top 123px no-repeat, url("../../images/ingredients__circle2.svg") bottom 121px left 53.8% no-repeat;
   background-color: #8556F8;
 }
 .description__list {
@@ -250,10 +293,10 @@
   padding: 48px 0 0 0;
 }
 .samples__form-wrapper {
-  width: 693px;
+  min-width: 693px;
   height: 544px;
   background-color: #016450;
-  margin: 60px 50px 60px 0;
+  margin: 60px 50px 60px 90px;
   color: #ffffff;
 }
 .samples__form-title {
@@ -287,6 +330,9 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .samples__input:hover {
   cursor: pointer;

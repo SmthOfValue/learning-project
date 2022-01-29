@@ -30,6 +30,12 @@
         position: relative;
     }
 
+    &__image {
+        height: 600px;
+        width: 783px;
+        display: block;
+    }
+
 
     &__text {
        margin: 278px 0 0 100px;
@@ -55,6 +61,7 @@
         top: 501px;
         left: 696px;
         transform: rotate(10.05deg);
+        
       
     }
 
@@ -82,3 +89,47 @@
 
     }
 }
+
+@media screen and (max-width: 1279px) {
+    .intro {
+        background: url("../../images/made-on-earth.svg") top 40px right 33px,  $primary-color;
+        background-repeat: no-repeat;
+        background-size: 128px 128px;
+
+        &__content {
+            padding: 126px 50px 50px 50px;
+            flex-direction: column;
+            width: 668px;
+            margin: auto;
+        }
+
+        &__text {
+            margin: 50px 0 0 0;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        &__subtitle {
+            margin: 0;
+            font-size: 30px;
+            line-height: 38px;
+            max-width: 407px;
+        }
+
+        &__images {
+            width: 668px;
+            margin: 0 auto;
+        }
+
+        &__image {
+            height: 514px;
+            width: 668px;
+        }
+
+        &__pineapple {
+            top: 358px;
+            left: 507px;     
+        }
+    }
+  }
+  
