@@ -83,8 +83,9 @@
             color: $secondary-color;
             overflow: hidden;
             white-space: nowrap;
-            width: $max-width + 93px;
-            clip: rect(0, $max-width + 93px, 76px, 93px);
+            width: 1440px + 93px;
+            clip: rect(0, 1440px + 93px, 76px, 93px);
+            
         }
 
     }
@@ -130,6 +131,15 @@
             top: 358px;
             left: 507px;     
         }
+
+        /*&__fresh{
+              
+            &::before {
+                width: calc(100vw + 93px);
+                clip: rect(0, calc(100vw + 93px), 76px, 93px);
+            }
+    
+        }*/
     }
   }
   
