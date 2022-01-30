@@ -28,7 +28,7 @@
 }
 
 .intro {
-  background: url("../../images/intro_background-circle.svg") top -160px right -160px, #9960F6;
+  background: url("../images/intro_background-circle.svg") top -160px right -160px, #9960F6;
   background-repeat: no-repeat;
   background-size: 565px 565px;
   width: 100%;
@@ -272,7 +272,7 @@
   gap: 30px 37%;
   padding: 90px 100px 90px 100px;
   box-sizing: border-box;
-  background: url("../../images/ingredients_circle1.svg") left 46.41% top 123px no-repeat, url("../../images/ingredients__circle2.svg") bottom 121px left 53.8% no-repeat;
+  background: url("../images/ingredients_circle1.svg") left 46.41% top 123px no-repeat, url("../images/ingredients__circle2.svg") bottom 121px left 53.8% no-repeat;
   background-color: #8556F8;
 }
 .description__list {
@@ -453,7 +453,7 @@
     left: 6px;
     width: 98.62px;
     height: 98.62px;
-    background-image: url("../../images/mango__mobile.svg");
+    background-image: url("../images/mango__mobile.svg");
     background-repeat: no-repeat;
     padding-left: 98.62px;
     display: block;
@@ -663,7 +663,7 @@
   width: 100%;
   margin: 0 auto;
   background-color: #7A54F9;
-  background-image: url("../../images/footer_circle.svg");
+  background-image: url("../images/footer_circle.svg");
   background-repeat: no-repeat;
   background-position: top 100px left 150px;
   background-size: 300px 300px;
