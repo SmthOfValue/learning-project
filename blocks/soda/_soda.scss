@@ -39,7 +39,7 @@
     }
 }
 
-@media screen and (max-width: 1279px) {
+@media screen and (max-width: $tablet-screen) {
     .soda {
         flex-direction: column;
 
@@ -61,7 +61,7 @@
 }
 
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: $mobile-screen) {
     .soda {
         &__title {
             margin: 50px auto;

@@ -127,7 +127,7 @@
     }
 }
 
-@media screen and (max-width: 1279px) {
+@media screen and (max-width: $tablet-screen) {
     .samples {
         flex-direction: column;
         max-width: 668px;
@@ -165,7 +165,7 @@
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: $mobile-screen) {
     .samples {
         max-width: 280px;
 
