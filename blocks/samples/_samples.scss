@@ -127,3 +127,19 @@
         }
     }
 }
+
+@media screen and (max-width: 1279px) {
+    .samples {
+        flex-direction: column;
+        max-width: 668px;
+
+        &__text {
+            padding: 60px 0 0 60px;
+        }
+
+        &__form-wrapper {
+            min-width: 600px;
+            margin: 100px auto 34px;
+        }
+    }
+}

@@ -14,11 +14,9 @@
     &__logo {
         margin: 0;
         padding: 236px 0 0 258px;
-        font-size: 30px;
-        line-height: 30px;
-        font-weight: 700;
-        color: #FFA72B;
-        text-transform: uppercase;
+        height: 30px;
+        width: 87px;
+        
     }
 
     &__content {
@@ -85,4 +83,32 @@
         grid-row: 2;
     }
 
+}
+
+@media screen and (max-width: 1279px) {
+    .footer {
+        background-position: top 120px left 50px;
+        background-size: 200px 200px;
+
+        &__logo {
+            padding: 213px 0 0 123px;
+            height: 15px;
+            width: 56.16px;
+        }
+
+        &__content {
+            padding: 120px 119px 0 0;
+            display: grid;
+            
+        }
+
+        &__contacts {
+            padding: 0 0 0 96px;
+        }
+
+        &__copyright {
+            padding-bottom: 50px;
+        }
+    
+    }
 }

@@ -10,11 +10,9 @@
     
     &__logo{
         margin: 0;
-        text-transform: uppercase;
-        font-size: 30px;
-        line-height: 30px;
+        height: 30px;
+        width: 87px;
         padding: 40px 0 0 50px;
-        color: #FFDB00;
     }
 
     &__content {
@@ -131,15 +129,6 @@
             top: 358px;
             left: 507px;     
         }
-
-        /*&__fresh{
-              
-            &::before {
-                width: calc(100vw + 93px);
-                clip: rect(0, calc(100vw + 93px), 76px, 93px);
-            }
-    
-        }*/
     }
   }
   
