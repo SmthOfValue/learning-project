@@ -14,11 +14,9 @@
     &__logo {
         margin: 0;
         padding: 236px 0 0 258px;
-        font-size: 30px;
-        line-height: 30px;
-        font-weight: 700;
-        color: #FFA72B;
-        text-transform: uppercase;
+        height: 30px;
+        width: 87px;
+        
     }
 
     &__content {
@@ -85,4 +83,78 @@
         grid-row: 2;
     }
 
+}
+
+@media screen and (max-width: 1279px) {
+    .footer {
+        background-position: top 120px left 50px;
+        background-size: 200px 200px;
+
+        &__logo {
+            padding: 213px 0 0 123px;
+            height: 15px;
+            width: 56.16px;
+        }
+
+        &__content {
+            padding: 120px 119px 0 0;
+        }
+
+        &__contacts {
+            padding: 0 0 0 96px;
+        }
+
+        &__copyright {
+            padding-bottom: 50px;
+        }
+    
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .footer {
+        background-position: top 60px center;
+        flex-direction: column;
+        
+
+        &__logo {
+            padding: 0;
+            margin: 153.26px auto 0;
+        }
+
+        &__content {
+            padding: 141.79px 0 0 0;
+            grid-template-rows: auto auto auto;
+            grid-template-columns: auto;
+            margin: 0 auto;
+        }
+
+        &__navigation {
+            grid-row: 1;
+            grid-column: 1;
+        }
+
+        &__contacts {
+            padding: 50px 0 0 0;
+            grid-row: 2;
+            grid-column: 1;
+        }
+
+        &__copyright {
+            padding: 50px 0 20px 0;
+            grid-row: 3;
+            grid-column: 1;
+            text-align: center;
+        }
+
+        &__title {
+            text-align: center;
+        }
+
+        &__item {
+            text-align: center;
+        }
+
+    
+    }
 }

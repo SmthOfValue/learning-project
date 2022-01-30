@@ -1,8 +1,9 @@
 .description {
-    width: 100%;
+    max-width: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    align-items: center;
 
     &__title {
         font-size: 60px;
@@ -16,14 +17,15 @@
     }
 
     &__tastes {
-        width: 1340px;
+        max-width: 1340px;
+        width: calc(100% - 100px);
         min-height: 525px;
         background-color: $primary-color;
-        margin: 0 auto;
+        margin: 0 50px;
         display: grid;
-        grid-template-columns: 386px 518px;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: 48px 93px;
-        gap: 30px 236px;
+        gap: 30px 16.4%;
         padding: 90px 100px 90px 100px;
         box-sizing: border-box;
     }
@@ -55,22 +57,24 @@
     &__image {
         width: 518px;
         height: 345px;
+        display: block;
     }
 
     &__ingredients {
-        width: 1340px;
+        max-width: 1340px;
+        width: calc(100% - 100px);
         min-height: 580px;
-        margin: 0 auto;
+        margin: 0 50px;
         display: grid;
-        grid-template-columns: 386px 255px;
+        grid-template-columns: minmax(370px, 1fr) 255px;
         grid-template-rows: 48px 62px 55px 55px 55px;
-        gap: 30px 499px;
+        gap: 30px 37%;
         padding: 90px 100px 90px 100px;
         box-sizing: border-box;
-
-        background: url('../../images/ingredients_circle1.svg') left 622px top 123px no-repeat, 
-        url('../../images/ingredients__circle2.svg') bottom 121px right 481px no-repeat;
+        background: url('../../images/ingredients_circle1.svg') left 46.41% top 123px no-repeat, 
+        url('../../images/ingredients__circle2.svg') bottom 121px left 53.8% no-repeat;
         background-color: #8556F8;
+        
     }
 
     &__list {
@@ -88,6 +92,7 @@
         margin: 0;
         border-bottom: 1px solid rgba(255, 255, 255, 0.5);
         padding: 30px 0 4px 0;
+        width: 255px;
     }
 
     &__ingredient:nth-of-type(1) {
@@ -101,4 +106,108 @@
     }
 
 
+}
+
+
+@media screen and (max-width: 1279px) {
+    .description {
+        &__tastes {
+            grid-template-columns: auto;
+            grid-template-rows: min-content min-content auto;
+            padding: 60px;
+            justify-content: center;
+            min-height: 0;
+            
+        }
+
+        &__slogan {
+            max-width: 386px;
+            padding-bottom: 30px;
+        }
+
+        &__image {
+            grid-column: 1;
+            grid-row: 3;
+            width: 548px;
+            height: 364px;
+            
+        }
+
+        &__ingredients {
+            grid-template-columns: auto;
+            grid-template-rows: repeat(8, auto);
+            padding: 60px;
+            background-position: left 90.61% top 298px, bottom 270px left 91.8%;
+        }
+
+        &__list {
+            padding-top: 40px;
+            grid-column: 1;
+            grid-row: 3/8;
+        }
+
+        &__button {
+            grid-row: 8;
+            margin-top: 70px;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .description {
+        &__title {
+            font-size: 20px;
+            line-height: 24px;
+            padding: 50px 0 50px 0;
+        }
+
+        &__tastes {
+            padding: 20px;
+            margin: 0 20px;
+            width: calc(100% - 40px);
+            gap: 14px;
+        }
+
+        &__subtitle {
+            font-size: 20px;
+            line-height: 24px;
+        }
+
+        &__slogan {
+            max-width: 100%;
+            font-size: 14px;
+            line-height: 19px;
+            padding-bottom: 36px;
+            font-weight: 400;
+        }
+
+        &__image {
+            width: 240px;
+            height: 160px;
+        }
+
+        &__ingredients {
+            padding: 20px;
+            margin: 0 20px;
+            width: calc(100% - 40px);
+            gap: 14px;
+            background: #8556F8;
+        }
+
+        &__list {
+            padding-top: 10px;
+        }
+
+        &__ingredient {
+            font-size: 22px;
+            line-height: 22px;
+            padding-bottom: 20px;
+            padding-top: 20px;
+            width: 240px;
+        }
+
+        &__button {
+            margin-top: 46px;
+        }
+    }
 }
