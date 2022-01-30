@@ -97,7 +97,7 @@
     }
 }
 
-@media screen and (max-width: 1279px) {
+@media screen and (max-width: $tablet-screen) {
     .intro {
         background: $primary-color;    
 
@@ -145,7 +145,7 @@
     }
   }
   
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $mobile-screen) {
     .intro {
         background: url("../../images/made-on-earth.svg") top 20px right 20px,  $primary-color;
         background-repeat: no-repeat;
