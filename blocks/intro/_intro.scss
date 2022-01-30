@@ -1,7 +1,7 @@
 .intro {
-    background: url("../../images/made-on-earth.svg") top 50px right 50px, url("../../images/intro_background-circle.svg") top -160px right -160px, $primary-color;
+    background: url("../../images/intro_background-circle.svg") top -160px right -160px, $primary-color;
     background-repeat: no-repeat;
-    background-size: 169px 169px, 565px 565px;
+    background-size: 565px 565px;
     width: 100%;
     margin: 0 auto;
     position: relative;
@@ -13,6 +13,14 @@
         height: 30px;
         width: 87px;
         padding: 40px 0 0 50px;
+    }
+
+    &__stamp {
+        position: absolute;
+        top: 50px;
+        right: 50px;
+        width: 169px;
+        height: 169px;
     }
 
     &__content {
@@ -91,9 +99,14 @@
 
 @media screen and (max-width: 1279px) {
     .intro {
-        background: url("../../images/made-on-earth.svg") top 40px right 33px,  $primary-color;
-        background-repeat: no-repeat;
-        background-size: 128px 128px;
+        background: $primary-color;    
+
+        &__stamp {
+            top: 40px;
+            right: 33px;
+            width: 128px;
+            height: 128px;
+        }
 
         &__content {
             padding: 126px 50px 50px 50px;
@@ -128,6 +141,77 @@
         &__pineapple {
             top: 358px;
             left: 507px;     
+        }
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .intro {
+        background: url("../../images/made-on-earth.svg") top 20px right 20px,  $primary-color;
+        background-repeat: no-repeat;
+        background-size: 94px 94px;
+
+        &__content {
+            padding: 50px 20px 20px 20px;
+            flex-direction: column;
+            width: 280px;            
+        }
+
+        &__logo {
+            width: 58px;
+            padding: 20px 0 0 20px;
+        }
+
+        &__stamp {                
+                top: 20px;
+                right: 20px;
+                width: 94px;
+                height: 94px;
+                z-index: 2;
+        }
+
+        &__text {
+            flex-direction: column;
+        }
+
+        &__subtitle {
+            font-size: 20px;
+            line-height: 24px;
+            max-width: 407px;
+            padding-bottom: 30px;
+        }
+
+        &__images {
+            width: 280px;
+            
+        }
+
+        &__image {
+            height: 216px;
+            width: 280px;
+        }
+
+        &__pineapple {
+            width: 83.25px;
+            height: 80.27px;
+            top: 167px;
+            left: 184px;     
+        }
+
+        &__button {
+            width: 152px;
+            height: 51px;
+            font-size: 16px;
+        }
+
+        &__fresh {
+            min-height: 64px;
+
+            &::before {
+                font-size: 20px;
+                line-height: 24px;
+                width: 950px;
+            }
         }
     }
   }
