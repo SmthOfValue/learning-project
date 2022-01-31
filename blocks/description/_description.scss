@@ -80,6 +80,9 @@
     &__list {
         grid-row: 1/4;
         grid-column: 2;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
     }
 
     
@@ -182,8 +185,8 @@
         }
 
         &__image {
-            width: 240px;
-            height: 160px;
+            width: 100%;
+            height: auto;
         }
 
         &__ingredients {

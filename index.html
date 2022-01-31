@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./pages/index.css">
 </head>
 <body class="page">
-    <section class="intro">
+    <header class="intro">
         <img class="intro__logo" alt="Логотип SODA" src="./images/SODA__intro.svg">
         <img src="./images/made-on-earth.svg" alt="Сделано на Земле" class="intro__stamp">
         <div class="intro__content">
@@ -22,59 +22,61 @@
             </div>
         </div>
         <div class="intro__fresh"></div>
-    </section>
-    <section class="description">
-        <h2 class="description__title">Как это работает?</h2>
-        <article class="description__tastes">
-            <h2 class="description__subtitle">Вкусы</h2>
-            <p class="description__slogan">Пейте фрукты, а&nbsp;не&nbsp;газировку со&nbsp;вкусовыми добавками, наши лимонады на&nbsp;100% натуральны!</p>
-            <img src="./images/how-it-works__image.png" alt="Бутылка лимонада в воде среди ягод клубники" class="description__image">
-        </article>
-        <article class="description__ingredients">
-            <h2 class="description__subtitle">Состав</h2>
-            <p class="description__slogan">Наши натуральные лимонады делаются из&nbsp;натуральных компонентов.</p>
-            <button class="button description__button">Попробовать</button>
-            <list class="description__list">
-                <ul class="description__ingredient">Сок</ul>
-                <ul class="description__ingredient">Пюре</ul>
-                <ul class="description__ingredient">Вода</ul>
-                <ul class="description__ingredient">Пузыри</ul>
-                <ul class="description__ingredient">Витамины</ul>
-            </list>
-        </article>
-    </section>
-    <section class="soda">
-        <h2 class="soda__title">SODA&nbsp;&mdash; натуральные лимонады!</h2>
-        <div class="soda__images">
-            <img src="./images/soda__image.png" alt="Бутылка лимонада в воде среди манго" class="soda__image">
-            <img src="./images/soda__mango.svg" alt="Манго" class="soda__mango">
-        </div>
-    </section>
-    <section class="samples">
-        <div class="samples__text">
-            <h2 class="samples__title">Семплы</h2>
-            <p class="samples__subtitle">Хотите получить семплы каждого вкуса, чтобы понять что нравится вам? Заполните форму!</p>
-        </div>
-        <div class="samples__form-wrapper">
-            <h3 class="samples__form-title">Семплы</h3>
-            <form action="#" class="samples__form">
-                <div class="samples__first-name">
-                    <input type="text" class="samples__input" id="first-name" name="first-name" placeholder=" ">
-                    <label for="first-name" class="samples__label">Имя *</label>
-                </div>
-                <div class="samples__last-name">
-                    <input type="text" class="samples__input" id="last-name" name="last-name" placeholder=" ">
-                    <label for="last-name" class="samples__label">Фамилия *</label>
-                </div>
-                <div class="samples__email">
-                    <input type="text" class="samples__input" id="e-mail" name="e-mail" placeholder=" ">
-                    <label for="e-mail" class="samples__label">Email *</label>
-                </div>
-                <input type="submit" class="button samples__button" value="Запросить">
-            </form>
-        </div>
-    </section>
-    <section class="footer">
+    </header>
+    <main>
+        <section class="description">
+            <h2 class="description__title">Как это работает?</h2>
+            <article class="description__tastes">
+                <h2 class="description__subtitle">Вкусы</h2>
+                <p class="description__slogan">Пейте фрукты, а&nbsp;не&nbsp;газировку со&nbsp;вкусовыми добавками, наши лимонады на&nbsp;100% натуральны!</p>
+                <img src="./images/how-it-works__image.png" alt="Бутылка лимонада в воде среди ягод клубники" class="description__image">
+            </article>
+            <article class="description__ingredients">
+                <h2 class="description__subtitle">Состав</h2>
+                <p class="description__slogan">Наши натуральные лимонады делаются из&nbsp;натуральных компонентов.</p>
+                <button class="button description__button">Попробовать</button>
+                <ul class="description__list">
+                    <li class="description__ingredient">Сок</li>
+                    <li class="description__ingredient">Пюре</li>
+                    <li class="description__ingredient">Вода</li>
+                    <li class="description__ingredient">Пузыри</li>
+                    <li class="description__ingredient">Витамины</li>
+                </ul>
+            </article>
+        </section>
+        <section class="soda">
+            <h2 class="soda__title">SODA&nbsp;&mdash; натуральные лимонады!</h2>
+            <div class="soda__images">
+                <img src="./images/soda__image.png" alt="Бутылка лимонада в воде среди манго" class="soda__image">
+                <img src="./images/soda__mango.svg" alt="Манго" class="soda__mango">
+            </div>
+        </section>
+        <section class="samples">
+            <div class="samples__text">
+                <h2 class="samples__title">Семплы</h2>
+                <p class="samples__subtitle">Хотите получить семплы каждого вкуса, чтобы понять что нравится вам? Заполните форму!</p>
+            </div>
+            <div class="samples__form-wrapper">
+                <h3 class="samples__form-title">Семплы</h3>
+                <form action="#" class="samples__form">
+                    <div class="samples__first-name">
+                        <input type="text" class="samples__input" id="first-name" name="first-name" placeholder=" ">
+                        <label for="first-name" class="samples__label">Имя *</label>
+                    </div>
+                    <div class="samples__last-name">
+                        <input type="text" class="samples__input" id="last-name" name="last-name" placeholder=" ">
+                        <label for="last-name" class="samples__label">Фамилия *</label>
+                    </div>
+                    <div class="samples__email">
+                        <input type="text" class="samples__input" id="e-mail" name="e-mail" placeholder=" ">
+                        <label for="e-mail" class="samples__label">Email *</label>
+                    </div>
+                    <input type="submit" class="button samples__button" value="Запросить">
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
         <img class="footer__logo" alt="Логотип SODA" src="./images/SODA__footer.svg">
         <div class="footer__content">
             <nav class="footer__navigation">
@@ -94,6 +96,6 @@
             </div>
             <p class="footer__copyright">&copy; 2021 Soda, Inc. All Rights Reserved.</p>
         </div>
-    </section>
+    </footer>
 </body>
 </html>

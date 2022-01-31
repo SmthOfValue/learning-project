@@ -53,6 +53,10 @@
             margin: 0 auto;
         }
 
+        &__image {
+            margin: 0 auto;
+        }
+
         &__mango {
             top: 29px;
             left: -93px;
@@ -61,24 +65,33 @@
 }
 
 
+
+
 @media screen and (max-width: $mobile-screen) {
     .soda {
         &__title {
             margin: 50px auto;
-            font-size: 20px;
-            line-height: 24px;
+            font-size: 40px;
+            line-height: 48px;
             padding: 0 20px 0 20px;
-            max-width: 280px;
+            
+        }
+
+        &__images {
+            width: 100%;
+            max-width: 430px;
         }
 
         &__image {
-            width: 280px;
-            height: 339px;
+            width: calc(100% - 40px);
+            height: auto;
+            margin-top: -58px;
+            object-position: 0 58px;
         }
 
         &__mango {
-            top: 190px;
-            left: 6px;
+            top: 189px;
+            left: 27px;
             width: 98.62px;
             height: 98.62px;
             background-image: url('../images/mango__mobile.svg');
@@ -87,5 +100,15 @@
             display: block;
             box-sizing: border-box;
         }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .soda__title {
+        margin: 50px auto;
+        font-size: 20px;
+        line-height: 24px;
+        padding: 0 20px 0 20px;
+        max-width: 280px;
     }
 }
