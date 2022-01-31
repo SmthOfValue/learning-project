@@ -157,7 +157,7 @@
   .intro__content {
     padding: 50px 20px 20px 20px;
     flex-direction: column;
-    width: 280px;
+    width: 87.5%;
   }
   .intro__logo {
     width: 58px;
@@ -180,17 +180,17 @@
     padding-bottom: 30px;
   }
   .intro__images {
-    width: 280px;
+    width: 100%;
   }
   .intro__image {
-    height: 216px;
-    width: 280px;
+    height: auto;
+    width: 100%;
   }
   .intro__pineapple {
     width: 83.25px;
     height: 80.27px;
-    top: 167px;
-    left: 184px;
+    top: 77.31%;
+    left: 65.71%;
   }
   .intro__button {
     width: 152px;
@@ -278,6 +278,9 @@
 .description__list {
   grid-row: 1/4;
   grid-column: 2;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 .description__ingredient {
   color: #ffffff;
@@ -358,8 +361,8 @@
     font-weight: 400;
   }
   .description__image {
-    width: 240px;
-    height: 160px;
+    width: 100%;
+    height: auto;
   }
   .description__ingredients {
     padding: 20px;
@@ -431,6 +434,9 @@
     padding: 0;
     margin: 0 auto;
   }
+  .soda__image {
+    margin: 0 auto;
+  }
   .soda__mango {
     top: 29px;
     left: -93px;
@@ -439,18 +445,24 @@
 @media screen and (max-width: 767px) {
   .soda__title {
     margin: 50px auto;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 40px;
+    line-height: 48px;
     padding: 0 20px 0 20px;
-    max-width: 280px;
+  }
+  .soda__images {
+    width: 100%;
+    max-width: 430px;
   }
   .soda__image {
-    width: 280px;
-    height: 339px;
+    width: calc(100% - 40px);
+    height: auto;
+    margin-top: -58px;
+    -o-object-position: 0 58px;
+       object-position: 0 58px;
   }
   .soda__mango {
-    top: 190px;
-    left: 6px;
+    top: 189px;
+    left: 27px;
     width: 98.62px;
     height: 98.62px;
     background-image: url("../images/mango__mobile.svg");
@@ -458,6 +470,15 @@
     padding-left: 98.62px;
     display: block;
     box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .soda__title {
+    margin: 50px auto;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 0 20px 0 20px;
+    max-width: 280px;
   }
 }
 .samples {
@@ -606,7 +627,7 @@
 }
 @media screen and (max-width: 767px) {
   .samples {
-    max-width: 280px;
+    max-width: calc(100% - 40px);
   }
   .samples__text {
     padding: 20px 0 0 20px;
@@ -622,7 +643,7 @@
   }
   .samples__form-wrapper {
     min-width: 0;
-    width: 260px;
+    width: calc(100% - 20px);
     margin: 50px auto 10px;
   }
   .samples__form-title {

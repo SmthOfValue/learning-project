@@ -154,7 +154,7 @@
         &__content {
             padding: 50px 20px 20px 20px;
             flex-direction: column;
-            width: 280px;            
+            width: 87.5%;            
         }
 
         &__logo {
@@ -182,20 +182,20 @@
         }
 
         &__images {
-            width: 280px;
+            width: 100%;
             
         }
 
         &__image {
-            height: 216px;
-            width: 280px;
+            height: auto;
+            width: 100%;
         }
 
         &__pineapple {
             width: 83.25px;
             height: 80.27px;
-            top: 167px;
-            left: 184px;     
+            top: 77.31%;
+            left: 65.71%;     
         }
 
         &__button {
