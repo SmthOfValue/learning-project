@@ -1,0 +1,218 @@
+.intro {
+    background: url("../images/intro_background-circle.svg") top -160px right -160px, $primary-color;
+    background-repeat: no-repeat;
+    background-size: 565px 565px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    
+  
+    
+    &__logo{
+        margin: 0;
+        height: 30px;
+        width: 87px;
+        padding: 40px 0 0 50px;
+    }
+
+    &__stamp {
+        position: absolute;
+        top: 50px;
+        right: 50px;
+        width: 169px;
+        height: 169px;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin: 0;
+        padding: 40px 0 50px 50px;
+        position: relative;
+    }
+
+    &__images {
+        position: relative;
+    }
+
+    &__image {
+        height: 600px;
+        width: 783px;
+        display: block;
+    }
+
+
+    &__text {
+       margin: 278px 0 0 100px;
+       display: flex;
+       flex-direction: column;
+    }
+
+    &__subtitle {
+        margin: 0 0 171px 0;
+        font-size: 40px;
+        line-height: 48px;
+        color: #ffffff;
+        font-weight: 600;
+    }
+
+    &__button {
+       width: 163px;
+    }
+
+    &__pineapple {
+        margin: 0;
+        position: absolute;
+        top: 501px;
+        left: 696px;
+        transform: rotate(10.05deg);
+        
+      
+    }
+
+    &__fresh{
+        background-color: #CEF564;
+        min-height: 76px;
+        position: relative;
+
+        &::before {
+            content:'fresh — fresh — fresh — fresh — fresh — fresh — fresh — fresh — fresh — fresh — fresh — fresh — fresh — fresh — fresh —';
+            position: absolute;
+            top: 20px;
+            right: 0;
+            font-family: $font-family-inter;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 36px;
+            text-transform: uppercase;
+            color: $secondary-color;
+            overflow: hidden;
+            white-space: nowrap;
+            width: 1440px + 93px;
+            clip: rect(0, 1440px + 93px, 76px, 93px);
+            
+        }
+
+    }
+}
+
+@media screen and (max-width: $tablet-screen) {
+    .intro {
+        background: $primary-color;    
+
+        &__stamp {
+            top: 40px;
+            right: 33px;
+            width: 128px;
+            height: 128px;
+        }
+
+        &__content {
+            padding: 126px 50px 50px 50px;
+            flex-direction: column;
+            width: 668px;
+            margin: auto;
+        }
+
+        &__text {
+            margin: 50px 0 0 0;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        &__subtitle {
+            margin: 0;
+            font-size: 30px;
+            line-height: 38px;
+            max-width: 407px;
+        }
+
+        &__images {
+            width: 668px;
+            margin: 0 auto;
+        }
+
+        &__image {
+            height: 514px;
+            width: 668px;
+        }
+
+        &__pineapple {
+            top: 358px;
+            left: 507px;     
+        }
+    }
+  }
+  
+  @media screen and (max-width: $mobile-screen) {
+    .intro {
+        background: url("../../images/made-on-earth.svg") top 20px right 20px,  $primary-color;
+        background-repeat: no-repeat;
+        background-size: 94px 94px;
+
+        &__content {
+            padding: 50px 20px 20px 20px;
+            flex-direction: column;
+            width: 87.5%;            
+        }
+
+        &__logo {
+            width: 58px;
+            padding: 20px 0 0 20px;
+        }
+
+        &__stamp {                
+                top: 20px;
+                right: 20px;
+                width: 94px;
+                height: 94px;
+                z-index: 2;
+        }
+
+        &__text {
+            flex-direction: column;
+        }
+
+        &__subtitle {
+            font-size: 20px;
+            line-height: 24px;
+            max-width: 407px;
+            padding-bottom: 30px;
+        }
+
+        &__images {
+            width: 100%;
+            
+        }
+
+        &__image {
+            height: auto;
+            width: 100%;
+        }
+
+        &__pineapple {
+            width: 83.25px;
+            height: 80.27px;
+            top: 77.31%;
+            left: 65.71%;     
+        }
+
+        &__button {
+            width: 152px;
+            height: 51px;
+            font-size: 16px;
+        }
+
+        &__fresh {
+            min-height: 64px;
+
+            &::before {
+                font-size: 20px;
+                line-height: 24px;
+                width: 950px;
+            }
+        }
+    }
+  }
+  
